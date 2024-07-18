@@ -1,13 +1,111 @@
-body {
+*{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0 ;
+}
+body{
+  width: 100%;
+  background-color: azure;
+}
+  .navbar{
+  letter-spacing: 5px;
+  
+  font-size: medium;
+  
+  word-spacing: 5px;
+  
+  color:black;
+  font-weight: bolder;
+  cursor: pointer;
+}  
+.background-img{
+  
+  background-image: url("https://png.pngtree.com/background/20230520/original/pngtree-neon-colored-and-3d-man-lifting-weights-from-barbell-3d-illustration-picture-image_2674906.jpg");
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.login{
+  margin: 20px;
+  width: fit-content;
+  padding-left: 30%;
+  padding-top: 5%;
+}
+ .signup{
+  margin: 20px;
+  width:70% ;
+  padding-left: 30%;
+  padding-top: 5%;
+  
+}
+
+.login-title{
+  margin-left: 40%;
+  color: rgb(39, 207, 207);
+  letter-spacing: 2px;
+  font-weight: bolder;
+}
+.signup-title{
+  margin-left: 35%;
+  color: rgb(39, 207, 207);
+  letter-spacing: 2px;
+  font-weight: bolder;
+}
+.img{
+  width: 200px;
+  height: 200px;
+}
+.goal-select{
+  margin-left: 40%;
+  font-weight: bolder;
+  margin-top: 5%;
+  color: rgb(42, 28, 163);
+}
+.goalPage{
+  margin-top: 5%;
+}
+.goal{
+  text-align: center;
+  padding-top: 30px;
+  /* display: flex;
+  flex-direction: row; */
+}
+.routine-button{
+  margin-top: 5%;
+  margin-left: 43%;
+  color: black;
+  border: navy;
+  background-color: rgb(140, 140, 151);
+  border-radius: 8px;
+  font-weight: 600;
+}
+.routine-button:hover{
+  background-color: rgb(153, 26, 115);
+}
+.weightloss, .weightgain , .musclegain{
+  padding-top: 20px;
+  text-align: left;
+  margin-left: 10%;
+  
+}
+.list{
+  margin-left: 9%;
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: larger;
+}
+.weightloss-img , .weightgain-img , .musclegain-img{
+  width: 200px;
+  height:200px;
+  margin: 20px 0px 0px 50px;
+}
+.routine-form{
+  text-align: center;
+  padding: 20px;
+}
+.meta{
+  padding-top: 10px;
+  text-align: center;
 }
