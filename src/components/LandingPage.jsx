@@ -76,7 +76,7 @@ date: null
   
 
   useEffect(() => {
-    axios.get("http://localhost:3001/userWorkout?email="+email).then((response) => {
+    axios.get("https://fitness-tracker-backend-r90b.onrender.com/userWorkout?email="+email).then((response) => {
       const userDetails = response?.data;
       setMyRoutines(userDetails);
     });
@@ -84,7 +84,7 @@ date: null
   }, []);
 
   useEffect(() => {
-    axios.get("http://localhost:3001/userFood?email="+email).then((response) => {
+    axios.get("https://fitness-tracker-backend-r90b.onrender.com/userFood?email="+email).then((response) => {
       const userDetails = response?.data;
       setMyIntakes(userDetails);
     });
@@ -93,7 +93,7 @@ date: null
 
   const handleAddRoutine = async () => {
     const addRoutineRes = await axios.post(
-      "http://localhost:3001/userWorkout",
+      "https://fitness-tracker-backend-r90b.onrender.com/userWorkout",
       {...dailyRoutineData, email: email}
     );
     if (addRoutineRes) {
@@ -102,7 +102,7 @@ date: null
   };
   const handleAddIntake = async () => {
     const addIntake = await axios.post(
-      "http://localhost:3001/userFood",
+      "https://fitness-tracker-backend-r90b.onrender.com/userFood",
       {...intake, email: email}
     );
     if (addIntake) {

@@ -17,7 +17,7 @@ const LoginAndSignup = ({ setUser }) => {
 
   const handleLogin = async () => {
     const userDetails = await axios.get(
-      "http://localhost:3001/user?email=" + loginDetails.email
+      "https://fitness-tracker-backend-r90b.onrender.com/user?email=" + loginDetails.email
     );
     console.log(loginDetails,userDetails);
     if (loginDetails.password === userDetails.data.password) {
@@ -29,7 +29,7 @@ const LoginAndSignup = ({ setUser }) => {
   };
 
   const handleSignup = async () => {
-    const userDetails = await axios.post("http://localhost:3001/user", {
+    const userDetails = await axios.post("https://fitness-tracker-backend-r90b.onrender.com/user", {
       email: signupDetails.email,
       name: signupDetails.name,
       password: signupDetails.password,
